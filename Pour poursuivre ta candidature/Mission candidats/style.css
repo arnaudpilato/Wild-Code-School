@@ -1,0 +1,615 @@
+/* Afin de valider ton code CSS, clic sur la petite flèche en haut à droite de cette fenêtre. Pour rappel, tu peux jeter un oeil par ici pour en savoir un peu plus: https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ */
+
+/* Ecris ici ton code CSS */
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	margin: auto;
+	width: 100%;
+}
+
+
+/* - - - - - Header - - - - - */
+
+
+.header
+{
+	background-color: #000;
+}
+
+.topbar
+{
+	background-color: #000;
+	box-shadow: 0 1px 10px rgba(0 0 0.05);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+}
+
+.topbar-title
+{
+	background-color: #000;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 3.7em;
+	color: #FFF;
+	text-align: center;
+}
+
+.topbar-img
+{
+	width: 100%;
+	margin-top: 100px;
+}
+
+.topbar-nav
+{
+	padding: 10px 0;
+	background-color: #000;
+}
+
+.topbar-nav ul
+{
+	display: flex;
+	justify-content: space-around;
+	padding-right: 20px;
+}
+
+.topbar-nav li
+{
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 2.5em;
+	font-weight: bold;
+	padding: 0 15px;
+	list-style-type: none;
+}
+
+.topbar-nav a
+{
+	color: #FFF;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.topbar-nav a:hover
+{
+	color: #f79342;
+	transition: 0.3s;
+}
+
+
+/* - - - - - Section One - - - - - */
+
+
+.section-one
+{
+	background-color: #0a2833;
+	padding-bottom: 150px;
+}
+
+#performances
+{
+	font-family: 'Amatic SC', sans-serif;
+	color: #FFF;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	font-size: 70px;
+	text-align: center;
+}
+
+.performances-column
+{
+	display: flex;
+	list-style-type: none;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.performances-column h3
+{
+	font-family: 'Amatic SC', sans-serif;
+	color: #FFF;
+	padding-top: 30px;
+	font-size: 40px;
+	text-align: center;
+}
+
+.performances-column p
+{
+	text-align: justify;
+	color: #FFF;
+	font-size: 20px;
+	padding-top: 30px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+}
+
+.performances-column img
+{
+	border-radius: 10px 10px 0 0;
+	height: 50%;
+	width: 100%;
+}
+
+.column-left
+{
+	border: 3px solid #FFF;
+	border-radius: 15px;
+	background-color: #000;
+	width: 100%;
+}
+
+.column-middle
+{
+	border: 3px solid #FFF;
+	border-radius: 10px;
+	margin: 0 2%;
+	background-color: #000;
+	width: 100%;
+}
+
+.column-right
+{
+	border: 3px solid #FFF;
+	border-radius: 10px;
+	background-color: #000;
+	width: 100%;
+}
+
+
+/* - - - - - Section Two - - - - - */
+
+
+.section-two
+{
+	background-color: #FFF;
+	padding: 100px 100px;
+}
+
+.section-two h2
+{
+	font-family: 'Amatic SC', sans-serif;
+	text-align: center;
+	font-size: 70px;
+}
+
+.section-two img
+{
+	border-radius: 10px;
+	height: 350px;
+	width: 500px;
+}
+
+.section-two p
+{
+	font-size: 1.8em;
+}
+
+.article-one, .article-three
+{
+	display: flex;
+	text-align: justify;
+	padding-top: 100px;
+}
+
+.article-one p, .article-three p
+{
+	padding-left: 100px;
+}
+
+.article-one p:last-child
+{
+	padding-top: 100px;
+	text-align: center;
+}
+
+.article-two, .article-four
+{
+	display: flex;
+	flex-direction: row-reverse;
+	text-align: justify;
+	padding-top: 100px;
+}
+
+.article-two p, .article-four p
+{
+	padding-right: 100px;
+}
+
+.article-four p:nth-child(2)
+{
+  text-align: center;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+.article-four p:last-child
+{
+	padding-top: 40px;
+}
+
+
+/* - - - - - Section Three - - - - - */
+
+
+.section-three
+{
+	padding-bottom: 140px;
+	background-color: #0a2833;
+}
+
+#prices
+{
+	font-family: 'Amatic SC', sans-serif;
+	color: #FFF;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	font-size: 70px;
+	text-align: center;
+}
+
+.table
+{
+	margin: auto;
+	color: #FFF;
+	border-collapse: collapse;
+	border-radius: 10px;
+}
+
+.table td, th
+{
+	border: 3px solid #FFF;
+	text-align: center;
+	height: 80px;
+	width: 200px;
+}
+
+.table th:first-child
+{
+	color: #f79342;
+}
+
+
+/* - - - - - Section Four - - - - - */
+
+
+#contact
+{
+	font-family: 'Amatic SC', sans-serif;
+	color: #000;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	font-size: 70px;
+	text-align: center;
+}
+
+form
+{
+  display: flex;
+  flex-direction: column;
+	font-size: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+label
+{
+	font-family: 'Amatic SC', sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	width: 300px;
+}
+
+input
+{
+	box-shadow: 0 1px 5px 0;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	border: 2px solid #000;
+	transition: 0.3s;
+	border-radius: 10px;
+	padding-left: 10px;
+	font-size: 15px;
+	height: 50px;
+	width: 500px;
+}
+
+input:hover
+{
+	box-shadow: 0 5px 10px 0;
+	transition: 0.3s;
+}
+
+textarea
+{
+	box-shadow: 0 1px 5px 0;
+	margin: 20px 0;
+	border: 2px solid #000;
+	border-radius: 10px;
+	padding-top: 15px;
+	padding-left: 10px;
+	transition: 0.3s;
+	font-size: 15px;
+	height: 150px;
+	width: 500px;
+}
+
+textarea:hover
+{
+	box-shadow: 0 5px 10px 0;
+	transition: 0.3s;
+}
+
+#send
+{
+	background-color: #0a2833;
+	color: #FFF;
+	padding: 0;
+	width: 80px;
+	margin-bottom: 100px;
+	transition: 0.3s;
+}
+
+#send:hover
+{
+	box-shadow: 0 3px 10px 0;
+	background-color: #FFF;
+	color: #0a2833;
+	transition: 0.3s;
+}
+
+.footer
+{
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 30px;
+	color: #FFF;
+	text-align: center;
+	background-color: #0a2833;
+	padding: 30px 0;
+}
+
+.profil
+{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 40px;
+	padding-bottom: 40px;
+}
+
+.france-ioi img
+{
+	border: 3px solid #0a2833;
+	border-radius: 10px;
+	width: 250px;
+	padding: 13px 50px;
+	transition: 0.3s;
+}
+
+.france-ioi img:hover
+{
+	border: 3px solid #FFF;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+.sololearn img
+{
+	border: 3px solid #0a2833;
+	border-radius: 10px;
+	width: 300px;
+	padding: 39px 50px;
+	transition: 0.3s;
+}
+
+.sololearn img:hover
+{
+	border: 3px solid #FFF;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+.wild-code-school img
+{
+	border: 3px solid #0a2833;
+	border-radius: 10px;
+	width: 300px;
+	padding: 20px 50px;
+	transition: 0.3s;
+}
+
+.wild-code-school img:hover
+{
+	border: 3px solid #FFF;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+
+/* - - - - - Media Queries - - - - - */
+
+
+@media only screen and (max-width: 850px)
+{
+
+	/* - - - - - Header - - - - - */
+
+
+	.topbar
+	{
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.topbar-title
+	{
+		font-size: 3em;
+		padding: 0 30px;
+	}
+
+	.topbar-nav ul
+	{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0;
+	}
+
+	.topbar-nav li
+	{
+		font-size: 1.7em;
+		padding: 0 35px;
+	}
+
+	.topbar-img
+	{
+		margin-top: 150px;
+	}
+
+
+	/* - - - - - Section One - - - - - */
+
+
+	.performances-column
+	{
+		flex-direction: column;
+	}
+
+	.performances-column p
+	{
+		padding-top: 100px;
+	}
+
+	.column-middle
+	{
+		margin: 50px 0;
+	}
+
+
+	/* - - - - - Section Two - - - - - */
+
+
+	.section-two
+	{
+		padding: 100px 0;
+	}
+
+	.section-two img
+	{
+		border-radius: 0;
+		height: auto;
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.article-one, .article-three
+	{
+		flex-direction: column;
+	}
+
+	.article-two
+	{
+		padding-top: 30px;
+	}
+
+	.article-two, .article-four
+	{
+		flex-direction: column;
+	}
+
+	.article-one p, .article-three p
+	{
+		padding-top: 50px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	.article-one p:last-child
+	{
+		padding-top: 50px;
+	}
+
+	.article-two p, .article-four p
+	{
+		padding-top: 50px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	.article-four p:last-child
+	{
+		padding-top: 50px;
+	}
+
+	.profil
+	{
+		flex-direction: column;
+	}
+
+
+	/* - - - - - Section Four - - - - - */
+
+
+	input
+	{
+		width: 300px;
+	}
+
+	textarea
+	{
+		width: 300px;
+	}
+
+
+	/* - - - - - Footer - - - - - */
+
+	
+	.footer
+	{
+	font-family: sans-serif;
+	font-size: 20px;
+	padding: 20px 0;
+	}
+
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1115px)
+{
+
+	/* - - - - - Section One - - - - - */
+
+
+	.performances-column p
+	{
+		padding-bottom: 180px;
+	}
+
+
+	/* - - - - - Section Two - - - - - */
+
+
+	.section-two p
+	{
+		font-size: 1.6em;
+	}
+
+	.section-two img
+	{
+		width: 350px;
+	}
+
+}
