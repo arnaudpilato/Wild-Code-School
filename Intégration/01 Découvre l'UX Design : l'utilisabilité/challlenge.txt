@@ -1,0 +1,51 @@
+Quête UX Design
+
+
+1 – Le statut du système doit être visible :
+
+Malgré la surcharge d’information, la visibilité et l’état du système répondent au premier principe de Nielsen. Une petite bannière reste visible en permanence affichant le statut de notre commande. Par ailleurs, il est possible de vérifier et de modifier notre commande via cette bannière.
+
+
+2 – Le système doit correspondre au monde réel :
+
+L’interface utilise un lexique simple et compréhensible. Ce qui donne une expérience plus fluide à l’utilisateur.
+
+
+3 – Contrôle de l’utilisateur et de liberté :
+
+Il est possible de retirer un menu choisi par erreur, de même l’utilisateur peut choisir et modifier la valeur d’un pourboire. En revanche, il est dommage de ne pas pouvoir modifier directement le contenu d’un menu lors d’une erreur de saisie.
+
+
+4 – Le système doit être cohérent avec les standards :
+
+La structure du site est organisée grâce à des éléments regroupés de façons logiques. La partie la plus importante est située dans le Top bar (barre de recherche, état de la commande, menu, etc). Un autre sous-menu permet d’affiner nos recherches (tri, offres, etc). De plus, le site est adapté en Responsive.
+
+
+5 – Prévention des faux-pas et des erreurs :
+
+Le système prévient les erreurs de saisie, en effet un message d’alerte nous averti afin de bien remplir notre champ de saisie.
+
+
+6 – Reconnaître plutôt que de se souvenir :
+
+Des liens HyperText constitués d’images et de description simple rendent la navigation fluide. Les informations sont pertinentes, simples et précises. Elles nous permettent de sélectionner la rubrique de notre choix de façon intuitif.
+
+
+7 – Flexibilité et efficacité d’usage :
+
+Le site est assez flexible. Il est possible d’utiliser des raccourcis pour des utilisateurs plus avancés. En revanche, il est dommage de ne pas recevoir de recommandation en rapport avec les commandes antérieures.
+
+
+8 – Esthétique et minimalisme :
+
+L’utilisateur n’est pas influencé par des publicités ou autres liens superflus qui pourrait le détourné de sa requête. 
+
+
+9 – Aide à la reconnaissance, au diagnostic et à la réparation des erreurs :
+
+Les messages d’erreur sont clairement expliqués et facilement compréhensibles. L’utilisateur n’a pas affaire à des erreurs comme par exemple « erreur 0002 » ou à d’autres messages non explicite.
+
+
+10 – Aide et documentation :
+
+On peut trouver sur le site différentes informations concernant notre requête comme des précisons concernant les allergies ou encore sur les détails de notre commande (montant des frais de services ou autres). De plus, une rubrique dédiée aux questions est disponible directement depuis le menu.
