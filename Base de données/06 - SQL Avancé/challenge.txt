@@ -1,0 +1,56 @@
+mysql> SELECT team.name, COUNT(player.id) as players
+    -> FROM team
+    -> JOIN player
+    -> ON player.team_id = team.id
+    -> GROUP BY team.name
+    -> ORDER BY players DESC;
++------------+---------+
+| name       | players |
++------------+---------+
+| Gryffindor |      36 |
+| Slytherin  |      21 |
+| Ravenclaw  |      15 |
+| Hufflepuff |      12 |
++------------+---------+
+4 rows in set (0.00 sec)
+
+
+
+mysql> SELECT team.name
+    -> FROM team
+    -> JOIN player
+    -> ON player.team_id = team.id
+    -> GROUP BY team.name
+    -> HAVING COUNT(player.id) > 14
+    -> ORDER BY team.name;
++------------+
+| name       |
++------------+
+| Gryffindor |
+| Ravenclaw  |
+| Slytherin  |
++------------+
+3 rows in set (0.00 sec)
+
+
+
+mysql> SELECT * FROM wizard
+    -> JOIN player
+    -> ON wizard.id = player.wizard_id
+    -> JOIN team
+    -> ON player.team_id = team.id
+    -> WHERE team.name = 'Gryffindor'
+    -> HAVING DAYOFWEEK(enrollment_date) = 2
+    -> ORDER BY enrollment_date;
++----+-----------+------------+----+-----------+---------+--------+-----------------+----+------------+
+| id | firstname | lastname   | id | wizard_id | team_id | role   | enrollment_date | id | name       |
++----+-----------+------------+----+-----------+---------+--------+-----------------+----+------------+
+| 82 | George    | Weasley    | 82 |        82 |       1 | chaser | 1991-08-26      |  1 | Gryffindor |
+| 39 | Alice     | Longbottom | 39 |        39 |       1 | beater | 1992-02-17      |  1 | Gryffindor |
+| 90 | Cadogan   |            | 90 |        90 |       1 | keeper | 1993-01-04      |  1 | Gryffindor |
+| 30 | Godric    | Gryffindor | 30 |        30 |       1 | seeker | 1993-08-30      |  1 | Gryffindor |
+|  6 | Sirius    | Black      |  6 |         6 |       1 | beater | 1994-01-10      |  1 | Gryffindor |
+| 20 | Aberforth | Dumbledore | 20 |        20 |       1 | keeper | 1995-04-24      |  1 | Gryffindor |
+| 41 | Augusta   | Longbottom | 41 |        41 |       1 | chaser | 1999-10-25      |  1 | Gryffindor |
++----+-----------+------------+----+-----------+---------+--------+-----------------+----+------------+
+7 rows in set (0.00 sec)
