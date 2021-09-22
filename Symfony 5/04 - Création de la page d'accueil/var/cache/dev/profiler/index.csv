@@ -1,0 +1,17 @@
+6fa693,127.0.0.1,GET,http://127.0.0.1:8000/,1606057207,,404
+533bf0,::1,GET,http://localhost:8000/,1606057214,,404
+6a0159,::1,GET,http://localhost:8000/,1606062732,,404
+da1f3a,::1,GET,http://localhost:8000/,1606062772,,404
+382662,::1,GET,http://localhost:8000/precious.html,1606062773,d8a7de,404
+d8a7de,::1,GET,http://localhost:8000/precious.html,1606062773,,404
+2b1236,::1,GET,http://localhost:8000/favicon.ico,1606062773,645bcc,404
+645bcc,::1,GET,http://localhost:8000/favicon.ico,1606062773,,404
+3d7c5c,::1,GET,http://localhost:8000/programs,1606062775,8ab6bc,404
+8ab6bc,::1,GET,http://localhost:8000/programs,1606062775,,404
+5ae56c,::1,GET,http://localhost:8000/favicon.ico,1606062775,a5b3a8,404
+a5b3a8,::1,GET,http://localhost:8000/favicon.ico,1606062775,,404
+c2205c,::1,GET,http://localhost:8000/programs,1606062951,68c180,404
+68c180,::1,GET,http://localhost:8000/programs,1606062951,,404
+3dd2a1,::1,GET,http://localhost:8000/programs,1606062979,,200
+877672,::1,GET,http://localhost:8000/programs,1606066256,,200
+9538f5,::1,GET,http://localhost:8000/app_index,1606067634,,200
