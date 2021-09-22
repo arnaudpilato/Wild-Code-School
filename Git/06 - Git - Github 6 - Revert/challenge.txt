@@ -1,0 +1,13 @@
+pil@Cirkus:~/my-website-oops$ git log --oneline
+da87a02 (HEAD -> master) add h1
+61f9aa6 change title
+a2681be create index.html
+pil@Cirkus:~/my-website-oops$ git revert HEAD
+[master 70a41c2] "cancel commit and add footer" Revert "add h1"
+ 1 file changed, 1 deletion(-)
+pil@Cirkus:~/my-website-oops$ git log --oneline
+70a41c2 (HEAD -> master) "cancel commit and add footer" Revert "add h1"
+da87a02 add h1
+61f9aa6 change title
+a2681be create index.html
+pil@Cirkus:~/my-website-oops$ 

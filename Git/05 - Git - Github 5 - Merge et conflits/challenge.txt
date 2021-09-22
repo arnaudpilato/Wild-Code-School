@@ -1,0 +1,49 @@
+pil@Cirkus:~/challengeGit5$ git pull 
+remote: Enumerating objects: 5, done. 
+remote: Counting objects: 100% (5/5), done. 
+remote: Compressing objects: 100% (2/2), done. 
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 
+Dépaquetage des objets: 100% (3/3), 667 octets | 667.00 Kio/s, fait. 
+Depuis https://github.com/arnaudpilato/challengeGit5 
+e4d84cb..d7fb369 master -> origin/master 
+Fusion automatique de README.md 
+CONFLIT (contenu) : Conflit de fusion dans README.md 
+La fusion automatique a échoué ; réglez les conflits et validez le résultat. 
+pil@Cirkus:~/challengeGit5$ git status 
+Sur la branche master 
+Votre branche et 'origin/master' ont divergé, 
+et ont 1 et 1 commits différents chacune respectivement. 
+(utilisez "git pull" pour fusionner la branche distante dans la vôtre) 
+ 
+Vous avez des chemins non fusionnés. 
+(réglez les conflits puis lancez "git commit") 
+(utilisez "git merge --abort" pour annuler la fusion) 
+ 
+Chemins non fusionnés : 
+(utilisez "git add <fichier>..." pour marquer comme résolu) 
+modifié des deux côtés : README.md 
+ 
+Modifications qui ne seront pas validées : 
+(utilisez "git add <fichier>..." pour mettre à jour ce qui sera validé) 
+(utilisez "git restore <fichier>..." pour annuler les modifications dans le répertoire de travail) 
+modifié : .~lock.README.md# 
+ 
+aucune modification n'a été ajoutée à la validation (utilisez "git add" ou "git commit -a") 
+pil@Cirkus:~/challengeGit5$ git add . 
+pil@Cirkus:~/challengeGit5$ git commit -m "Save LOCAL" 
+[master 5ab6fe9] Save LOCAL 
+pil@Cirkus:~/challengeGit5$ git pull 
+Déjà à jour. 
+pil@Cirkus:~/challengeGit5$ git push origin master 
+Username for 'https://github.com': arnaudpilato 
+Password for 'https://arnaudpilato@github.com': 
+Énumération des objets: 11, fait. 
+Décompte des objets: 100% (11/11), fait. 
+Compression par delta en utilisant jusqu'à 2 fils d'exécution 
+Compression des objets: 100% (7/7), fait. 
+Écriture des objets: 100% (7/7), 749 octets | 749.00 Kio/s, fait. 
+Total 7 (delta 1), réutilisés 0 (delta 0) 
+remote: Resolving deltas: 100% (1/1), completed with 1 local object. 
+To https://github.com/arnaudpilato/challengeGit5.git 
+d7fb369..5ab6fe9 master -> master 
+pil@Cirkus:~/challengeGit5$

@@ -1,0 +1,11 @@
+pil@Cirkus:~/wild-git$ git log -p
+commit 9c61cee009ed699f2d8dee65b9ae183bec993da0 (HEAD -> master)
+Author: arnaudpilato <pilato.arnaud@gmail.com>
+Date:   Wed Sep 16 12:13:18 2020 +0200
+
+    <At Wild Code School, we code without shoes>
+
+diff --git a/wild.html b/wild.html
+new file mode 100644
+index 0000000..e69de29
+pil@Cirkus:~/wild-git$ 
