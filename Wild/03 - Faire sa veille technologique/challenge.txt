@@ -1,0 +1,18 @@
+Veille PHP
+
+https://www.lafermeduweb.net/veille/les-nouveautes-de-php-8-prevu-pour-fin-2020
+
+Article très intéréssant concernant PHP 8 qui sortira prochaînement
+
+
+Veille CSS
+
+https://www.lafermeduweb.net/veille/creer-un-header-cameleon-qui-change-de-style-au-scroll
+
+Super tuto permettant de faire un header caméléon grace à la propriété clip path
+
+Veille UX
+
+https://newflux.fr/2020/06/30/3-methodologies-de-conception-ux-incontournables/
+
+Article UX sur 3 méthodologies de conception afin d'améliorer l'expérience utilisateur

@@ -1,0 +1,12 @@
+Debutut qteBonbon (argent, prixBonbon)
+calcul = 0
+bonbon = 0
+
+Si argent et prixBonbon > 0
+	Tant que calcul + prixBonbon <= argent
+		bonbon = bonbon + 1
+		calcul = calcul + prixBonbon
+	Fin tant que
+Fin si
+Retourner Bonbon
+Fin qteBonbon
