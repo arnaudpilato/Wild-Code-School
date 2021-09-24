@@ -1,0 +1,33 @@
+{
+  "entrypoints": {
+    "app": {
+      "js": [
+        "/build/runtime.js",
+        "/build/vendors~app.js",
+        "/build/app~program.js",
+        "/build/app.js"
+      ],
+      "css": [
+        "/build/app~program.css",
+        "/build/app.css"
+      ]
+    },
+    "program": {
+      "js": [
+        "/build/runtime.js",
+        "/build/app~program.js",
+        "/build/program.js"
+      ],
+      "css": [
+        "/build/app~program.css"
+      ]
+    },
+    "watchlist": {
+      "js": [
+        "/build/runtime.js",
+        "/build/vendors~watchlist.js",
+        "/build/watchlist.js"
+      ]
+    }
+  }
+}
