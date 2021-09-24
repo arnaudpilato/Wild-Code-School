@@ -1,0 +1,49 @@
+<?php //%255BApp%255CEntity%255CActor%2524pictureFile%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Vich\\UploaderBundle\\Mapping\\Annotation\\UploadableField'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Vich\\UploaderBundle\\Mapping\\Annotation\\UploadableField')),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\File'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\File')),
+    ],
+    null,
+    [
+        'Vich\\UploaderBundle\\Mapping\\Annotation\\UploadableField' => [
+            'mapping' => [
+                'picture_file',
+            ],
+            'fileNameProperty' => [
+                'picture',
+            ],
+        ],
+        'stdClass' => [
+            'binaryFormat' => [
+                1 => false,
+            ],
+            'mimeTypes' => [
+                1 => [
+                    'image/jpeg',
+                    'image/png',
+                    'image/jpg',
+                ],
+            ],
+            'mimeTypesMessage' => [
+                1 => 'Le fichier doit être au format .jpg, .png ou .jpeg.',
+            ],
+            'groups' => [
+                1 => [
+                    'Default',
+                ],
+            ],
+        ],
+        'Symfony\\Component\\Validator\\Constraints\\File' => [
+            'maxSize' => [
+                1 => 2000000,
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];
