@@ -1,0 +1,79 @@
+@import 'variables.scss';
+
+body {
+    padding-top: 62px;
+    background-color: $primary;
+}
+
+.navbar {
+    position: fixed;
+    box-shadow: $box-shadow;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.navbar .logo {
+    width: 50px;
+}
+
+li {
+    color: $secondary;
+}
+
+.accueil {
+    background-image: url('../images/index_picture.png');
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    height: 1000px;
+    background-position-x: center;
+}
+
+.accueil a {
+    top: 1200px;
+}
+
+.accueil h1 {
+     margin-top: 200px;
+     font-family: 'Sail', sans-serif;
+     font-size: 10rem;
+ }
+
+h2 {
+    text-align: center;
+    font-family: 'Salsa', sans-serif;
+}
+
+h1, h2 {
+    color: $secondary;
+    margin-top: 50px;
+}
+
+.text-home {
+    font-family: 'Sail', sans-serif;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+.accueil {
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+p {
+    font-family: 'risque', sans-serif;
+    color: $secondary;
+    text-align: left;
+}
+
+
+a {
+    color: $secondary;
+}
+
+.flag-icon flag-icon-fr:before {
+    content: url("../images/france_flag.png");
+}
+
