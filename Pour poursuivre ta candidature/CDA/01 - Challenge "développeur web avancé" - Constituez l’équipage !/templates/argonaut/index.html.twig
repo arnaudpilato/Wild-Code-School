@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'argonaut.add'|trans }}{% endblock %}
+
+{% block body %}
+    <div class="container parchemin">
+        {% for category, messages in app.flashes %}
+            {% for message in messages %}
+                <div class="addFlash alert alert-{{ category }} text-center">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+        <h1 class="text-center my-3">{{ 'argonaut.add'|trans }}</h1>
+        {{ include('argonaut/_form.html.twig') }}
+        <h2 class="py-3 text-center">{{ 'argonaut.crew.members'|trans}}</h2>
+        <div class="row essai">
+            {% for argonaut in argonauts %}
+                <div class="col-10 col-sm-10 col-md-5 col-lg-3">
+                    {{ argonaut.name }}
+                </div>
+                <!-- <div class="col-2 col-sm-2 col-md-1 col-lg-1 mr-0 pr-0 text-right">
+                    <a href="{{ path('argonaut_edit', {'id': argonaut.id}) }}"><img src="{{ asset('build/edit.png') }}" alt="Edit logo"></a>
+                </div> -->
+                <div class="col-2 col-sm-2 col-md-1 col-lg-1 ml-0 pl-0">
+                    {{ include('argonaut/_delete_form.html.twig') }}
+                </div>
+
+                <!--
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Launch demo modal
+                </button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="editModal" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="editModal"><img src="{{ asset('build/edit.png') }}" alt="Edit logo"></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            {% endfor %}
+        </div>
+    </div>
+
+    <script>
+        $( document ).ready(function() {
+            refresh_argonauts();
+        });
+
+        function refresh_argonauts(){
+            let argonauts_list = [];
+
+            $.get( "http://127.0.0.1:8000/api/argonauts", function( data ) {
+                let argonauts_from_api = data["hydra:member"];
+                argonauts_from_api.forEach(function(argonaut){
+                    console.log(argonaut["id"]);
+                    console.log(argonaut["name"]);
+                });
+            });
+        }
+    </script>
+{% endblock %}

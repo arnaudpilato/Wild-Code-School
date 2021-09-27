@@ -1,0 +1,4 @@
+<form method="post" action="{{ path('argonaut_delete', {'id': argonaut.id}) }}" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer ?');">
+    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ argonaut.id) }}">
+    <button class="btn"><img src="{{ asset('build/delete.png') }}" alt="Edit logo"></button>
+</form>

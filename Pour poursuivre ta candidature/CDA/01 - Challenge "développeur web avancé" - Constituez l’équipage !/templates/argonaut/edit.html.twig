@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'argonaut.edit'|trans }}{% endblock %}
+
+{% block body %}
+    <div class="container parchemin">
+        <h1 class="text-center">{{ 'argonaut.edit'|trans }}</h1>
+        {{ include('argonaut/_form.html.twig', {'button_label': 'Update'|trans }) }}
+        <div class="text-center">
+            <a class="btn btn-dark edit-button" href="{{ path('argonaut_index') }}">{{ 'back.to.list'|trans }}</a>
+        </div>
+    </div>
+{% endblock %}

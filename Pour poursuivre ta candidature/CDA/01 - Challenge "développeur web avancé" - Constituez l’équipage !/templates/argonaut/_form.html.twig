@@ -1,0 +1,9 @@
+<div class="form-add">
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <div class="text-right">
+        <button class="btn btn-dark save-button">{{ button_label|default('Save'|trans) }}</button>
+    </div>
+
+    {{ form_end(form) }}
+</div>

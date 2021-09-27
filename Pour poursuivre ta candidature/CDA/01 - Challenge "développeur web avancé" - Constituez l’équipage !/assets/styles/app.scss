@@ -1,0 +1,100 @@
+/***** import *****/
+@import 'variables.scss';
+@import "~bootstrap/scss/bootstrap";
+
+/***** all *****/
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+/***** navbar - footer *****/
+.navbar {
+    box-shadow: $box-shadow;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+.nav-link {
+    font-family: 'Lobster', sans-serif;
+    font-size: 3rem;
+    color: black;
+}
+
+.dropdown-item, .btn, .form-add {
+    font-family: 'Lobster', sans-serif;
+}
+
+.navbar, footer {
+    background: no-repeat url('../images/navbar.jpeg');
+    background-size: cover;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/***** title *****/
+h1 {
+    padding: $spacing-4 0;
+    font-size: $h1-font-size;
+}
+
+h2 {
+    padding: $spacing-2 0;
+    font-size: $h2-font-size;
+}
+
+h3 {
+    font-size: $h3-font-size;
+}
+
+h4 {
+    font-size: $h4-font-size;
+}
+
+body {
+    background-color: lightgray;
+    font-family: 'Tangerine', sans-serif;
+    font-size: 2.5rem;
+}
+
+.parchemin {
+    background: no-repeat url('../images/parchemin.jpeg');
+    background-size: cover;
+    padding: 50px 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+body {
+    background: no-repeat url('../images/table.jpeg');
+    background-size: cover;
+}
+
+/***** modal (ajax) ****
+.modal-content {
+    background: no-repeat url('../images/parchemin.jpeg');
+    background-size: cover;
+}
+
+.edit {
+    background: none;
+    border: none;
+} */
+
+@media (max-width: 400px) {
+    .parchemin {
+        margin: 0;
+    }
+
+    h1 {
+        padding: $spacing-2 0;
+        font-size: $h1-font-size;
+    }
+}
+
